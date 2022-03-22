@@ -10,11 +10,12 @@ function showAlert(score) {
 function predictWord() {
  // Array of words that the recognizer is trained to recognize.
  const words = recognizer.wordLabels();
+ console.log("0:"+words[0]+ " 1:"+words[1])
  recognizer.listen(({scores}) => {
    // Turn scores into a list of (score,word) pairs.
    scores = Array.from(scores).map((s, i) => ({score: s, word: words[i]}));
    showAlert(scores[1].score)
- }, {probabilityThreshold: 0.5});
+ }, {probabilityThreshold: 0.95});
 }
 
 $("#success-alert").hide();
@@ -29,10 +30,5 @@ async function app() {
  await recognizer.ensureModelLoaded();
  predictWord()
 }
-
-//import * as tf from '@tensorflow/tfjs-core';
-//import * as tfl from '@tensorflow/tfjs-layers';
-//import * as speechCommands from '@tensorflow-models/speech-commands';
-
 
 app();
