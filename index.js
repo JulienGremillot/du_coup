@@ -7,15 +7,19 @@ function showAlert(score) {
  });
 }
 
+const THRESHOLD = 0.75
 function predictWord() {
  // Array of words that the recognizer is trained to recognize.
  const words = recognizer.wordLabels();
- console.log("0:"+words[0]+ " 1:"+words[1])
+ console.log("0:"+words[0]+ " 1:"+words[1] + " 2:" + words[2])
  recognizer.listen(({scores}) => {
    // Turn scores into a list of (score,word) pairs.
+   console.log(scores[2])
    scores = Array.from(scores).map((s, i) => ({score: s, word: words[i]}));
-   showAlert(scores[1].score)
- }, {probabilityThreshold: 0.95});
+   if (scores[2].score > THRESHOLD) {
+        showAlert(scores[2].score)
+   }
+ }, {probabilityThreshold: THRESHOLD});
 }
 
 $("#success-alert").hide();
