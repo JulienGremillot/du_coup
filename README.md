@@ -2,7 +2,7 @@
 
 Ce repo contient les fichiers de travail qui m'ont permis de construire un détecteur du tic de langage "du coup" à partir d'une captation audio réalisée via une page web, dans un navigateur.
 
-J'ai présenté ce projet lors d'un "Dej'Tech" organisé par ma société [Delia Technologies](https://delia.tech) le 25 mars 2022, [diffusé en direct sur LinkedIn](https://www.linkedin.com/video/event/urn:li:ugcPost:6910159634284650496/) et sur [Youtube](https://www.youtube.com/watch?v=31-w2fRWabk&t=130s&ab_channel=DeliaTechnologies).
+J'ai présenté ce projet lors d'un "Dej'Tech" organisé par ma société [Delia Technologies](https://delia.tech) le 25 mars 2022, [diffusé en direct sur LinkedIn](https://www.linkedin.com/video/event/urn:li:ugcPost:6910159634284650496/) et sur [Youtube](https://www.youtube.com/watch?v=31-w2fRWabk&ab_channel=DeliaTechnologies).
 
 Les slides de cette présentation sont présents ici :
 - [au format PPTX](https://github.com/JulienGremillot/du_coup/raw/6bb6324464e20b9069846b002457414b5b5cd16b/ML%20_%20votre%20premier%20projet%20avec%20Tensorflow%20pour%20d%C3%A9tecter%20les%20_du%20coup_%20_.pptx)
